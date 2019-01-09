@@ -3,10 +3,9 @@
 var commands = require('./lib/commands');
 
 module.exports = {
-  name: 'ember-cli-front-end-builds',
+  name: require('./package').name,
 
   includedCommands: function() {
     return commands;
   }
 };
-
